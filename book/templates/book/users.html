@@ -1,0 +1,5 @@
+{% extends 'book/base.html' %} {% block content_block %} {% for user in data %}
+<h1>{{ user.username }}</h1>
+{% endfor %}
+<!-- ここに追記 -->
+{% endblock %}

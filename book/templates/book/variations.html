@@ -1,0 +1,5 @@
+{% extends 'book/base.html' %} {% block content_block %} {% for var in data %}
+<h1>{{ var.kind }}</h1>
+<p>{{ var.book.title }}</p> {% endfor %}
+<!-- ここに追記 -->
+{% endblock %}

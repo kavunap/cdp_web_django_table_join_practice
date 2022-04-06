@@ -1,0 +1,50 @@
+[{
+        "model": "book.book",
+        "pk": 1,
+        "fields": {
+            "title": "PythonBook",
+            "user_id": 1
+        }
+    },
+    {
+        "model": "book.Book",
+        "pk": 2,
+        "fields": {
+            "title": "Djangoguide",
+            "user_id": 1
+        }
+    },
+    {
+        "model": "book.book",
+        "pk": 3,
+        "fields": {
+            "title": "Djangoguide",
+            "user_id": 2
+        }
+    },
+
+    {
+        "model": "book.variation",
+        "pk": 1,
+        "fields": {
+            "kind": "paper book",
+            "book_id": 1
+        }
+    },
+    {
+        "model": "book.variation",
+        "pk": 2,
+        "fields": {
+            "kind": "paper book",
+            "book_id": 2
+        }
+    },
+    {
+        "model": "book.variation",
+        "pk": 3,
+        "fields": {
+            "kind": "PDF",
+            "book_id": 3
+        }
+    }
+]

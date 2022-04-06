@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>Join Tables App</title>
+
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="{% url 'books_list' %}">List of Books</a></li>
+        </ul>
+        <ul>
+            <li><a href="{% url 'variations_list' %}">List of variations</a></li>
+        </ul>
+        <ul>
+            <li><a href="{% url 'users_list' %}">Users List</a></li>
+        </ul>
+    </header>
+    {% if messages %}
+    <!-- 1 -->
+    <ul>
+        {% for message in messages %}
+        <!-- 2 -->
+        <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+            <!-- 3 -->
+            {% endfor %}
+    </ul>
+    {% endif %}
+    <div class="main">
+        {% block content_block %} {% endblock %}
+    </div>
+    <footer>
+        <p>運営会社 DIVE INTO CODE 株式会社</p>
+        <p>© 2022-2023 DIVE INTO CODE Corp.</p>
+    </footer>
+</body>
+
+</html>
