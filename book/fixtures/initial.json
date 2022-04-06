@@ -1,4 +1,26 @@
 [{
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "username": "Alice"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "username": "Bob"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "username": "Cameron"
+        }
+    },
+
+    {
         "model": "book.book",
         "pk": 1,
         "fields": {
