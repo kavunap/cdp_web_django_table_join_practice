@@ -1,0 +1,13 @@
+{% extends 'book/base.html' %} {% block content_block %}
+<p>
+    <strong>User Name:</strong> {{user.username}}
+</p>
+<p>
+    <h3>User Books with Variations</h3>
+    {% for book in user_books %} {% for variation in book.variation_set.all %} {{ variation.kind}}<br> {% endfor %}{% endfor %}
+</p>
+<p>
+    {{user.select_related }}
+</p>
+
+<a href="{% url 'users_list' %}">Back</a> {% endblock %}
